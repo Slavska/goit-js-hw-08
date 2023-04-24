@@ -16,7 +16,8 @@ function formInput() {
 function formSubmit(e) {
   e.preventDefault();
   if (email.value === '' || message.value === '') {
-    return alert('Поля не заповнені!');
+    alert('Поля не заповнені!');
+    return;
   }
   console.log({ email: email.value, message: message.value });
   feedbackForm.reset();
